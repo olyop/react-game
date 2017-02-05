@@ -43,11 +43,19 @@ class Game extends React.Component {
 	
 	handleArrow(e) {
 		
-		if (e.key === 'w') { this.top }
-		else if (e.key === 'd') { this.right }
-		else if (e.key === 's') { this.bottom }
-		else if (e.key === 'a') { this.left }
-		else { console.log('Invalid Key') }
+		let k = e.key
+		
+		if (k === 'w') {
+			this.top
+		} else if (k === 'd') {
+			this.right
+		} else if (k === 's') {
+			this.bottom
+		} else if (k === 'a') {
+			this.left
+		} else {
+			console.log('Invalid Key')
+		}
 		
 	}
 	
